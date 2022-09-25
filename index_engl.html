@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="pictures/Icon.ico">
+<meta charset="utf-8">
+<meta name="description" content="Life is Paine, Jonas Autenrieth, Point and Click, Kickstarter, Patreon, Unterstützung, English, Deutsch, A Bards Game">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Life is Paine</title>
+<link rel="stylesheet" href="style.css">
+<script src="animations.js"></script>
+</head>
+
+<body>
+	<div id="outercontainer">
+		<img id="busch" src="pictures/Busch.png" alt="">
+		<img class="wolke" id="wolke4" src="pictures/Wolke 4.png" alt="" onclick="wolke4(),openFullscreen()">
+		<img class="wolke" id="wolke3" src="pictures/Wolke 3.png" alt="" onclick="wolke3(),openFullscreen()">
+		<img class="wolke" id="wolke2" src="pictures/Wolke 2.png" alt="" onclick="wolke2(),openFullscreen()">
+		<img class="wolke" id="wolke1" src="pictures/Wolke 1.png" alt="" onclick="wolke1(),openFullscreen()">
+		<img id="paine" src="pictures/mov1.png" alt="">
+		<img id="zuruck" src="pictures/zuruck.png" alt="" onclick="zuruck()">
+		<img id="schriftzug" src="pictures/schriftzug.png" alt="">
+	
+		<div id="textcontainer">
+			<img id="sprechblase" src="pictures/Sprechblase 0.png" alt="">
+			<!--About the Game-->
+			<div id="text" class="incontainer">
+				Life is Paine is a Point and click Adventure inspired by classic Adventure games like “Monkey island” and “Edna&amp;Harvey the Breakout”. <br/>
+				<br/>
+				<p class="h">What is the story about?</p>
+				The story revolves around a Bard named Vidus Paine who has lost his singing voice and is trying to reclaim it. The story is mostly comedic with a few downbeats.<br/>
+				<br/>
+				<p class="h">What makes the game special?</p>
+				All items are combinable with each other and items in the game which most of the times produce a unique answer or joke, fitting the combination, if you combine them. Just like in the good old adventures.
+				The Game features comedic poems and wordplay, fitting the main character of the story as he is a Bard.
+				<br/>
+				<br/>
+				<p class="h">Who is designing the game?</p>
+				The Game concept and development is conducted by Jonas Autenrieth.
+
+			</div>
+			<!--Download-->
+			<div class="incontainer" id="download">
+				<table>
+					<tr>
+						<td>
+							If you want to download the first chapter of the game you can download it directly
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="https://lifeispaine.de/Life is Paine.rar" download>
+								<img class="downloadpic" src="pictures/download.png" alt="">
+							</a>
+						</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td>
+							Or via itch.io
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="https://autenrieth-j.itch.io/life-is-paine-kapitel-1" target="_blank" rel="noreferrer">
+								<img class="downloadpic" src="pictures/itchio.png" alt="">
+							</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!-- Bug Report-->
+			<div class="incontainer" id="bugreport">
+			Did you find a bug and want to help getting rid of that bug, or do you have any other enquiry then contact me via 
+			<a href="mailto:lifeispainegame@gmail.com?subject=Bug%20Report">Mail</a>
+			<br>or <a href="https://www.facebook.com/Life-is-Paine-109971624114709/?ref=page_internal" target="_blank" rel="noreferrer">Facebook</a>
+			</div>
+			
+			<!-- Support me-->
+			<div class="incontainer" id="support">
+			Do you like the game and want to support me?<br>
+			Then check out my <a href="https://www.patreon.com/jonaut" target="_blank" rel="noreferrer">Patreon</a> page.<br>
+			<br>
+			Or help financing the game via <a href="https://www.kickstarter.com/projects/jonaut/life-is-paine-point-and-click-adventure?ref=project_build" target="_blank"rel="noreferrer">Kickstarter</a>.
+			<br>
+			</div>
+		</div>
+
+		<p class="language"><a id="de"  href="https://lifeispaine.de" rel="noreferrer">DE</a> | <a id="en" href="https://en.lifeispaine.de" rel="noreferrer">EN</a></p>
+
+	</div>
+</body>
+<script>
+	movement();
+	
+	window.onorientationchange = function(event) { 
+        window.location.reload(); 
+    };
+	window.onresize = function(event) { 
+        window.location.reload(); 
+    }; 
+	
+	if(window.location.href == "https://lifeispaine.de/" || window.location.href == "https://www.lifeispaine.de/"){
+		document.getElementById("de").style.opacity = 0.5;
+	}else{
+		document.getElementById("en").style.opacity = 0.5;
+	}
+</script>
+
+</html>

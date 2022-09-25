@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="pictures/Icon.ico">
+<meta charset="utf-8">
+<meta name="description" content="Life is Paine, Jonas Autenrieth, Point and Click, Kickstarter, Patreon, Unterstützung, English, Deutsch, A Bards Game">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Life is Paine</title>
+<link rel="stylesheet" href="style.css">
+<script src="animations.js"></script>
+</head>
+
+<body>
+	<div id="outercontainer">
+		<img id="busch" src="pictures/Busch.png" alt="">
+		<img class="wolke" id="wolke4" src="pictures/Wolke 4.png" alt="" onclick="wolke4(),openFullscreen()">
+		<img class="wolke" id="wolke3" src="pictures/Wolke 3.png" alt="" onclick="wolke3(),openFullscreen()">
+		<img class="wolke" id="wolke2" src="pictures/Wolke 2.png" alt="" onclick="wolke2(),openFullscreen()">
+		<img class="wolke" id="wolke1" src="pictures/Wolke 1.png" alt="" onclick="wolke1(),openFullscreen()">
+		<img id="paine" src="pictures/mov1.png" alt="">
+		<img id="zuruck" src="pictures/zuruck.png" alt="" onclick="zuruck()">
+		<img id="schriftzug" src="pictures/schriftzug.png" alt="">
+	
+		<div id="textcontainer">
+			<img id="sprechblase" src="pictures/Sprechblase 0.png" alt="">
+			<!--About the Game-->
+			<div id="text" class="incontainer">
+				Life is Paine ist ein komödiantisches Point and Click Adventure inspiriert von klassischen Point and Click Adventures, wie „Edna bricht aus“ und „Monkey Island“.<br/>
+				<br/>
+				<p class="h">Worüber handelt das Spiel?</p>
+				Das Spiel handelt über einen Barden, welcher seine Singstimme verloren hat und nun versucht, sie wiederzuerlangen. Dazu muss er einige Rätsel in seiner Umgebung lösen und trifft etliche Menschen, welche ihm mehr oder weniger bei seiner Mission unterstützen.<br/>
+				<br/>
+				<p class="h">Was hebt das Spiel von anderen modernen Point and Click Adventures ab?</p>
+				Life is Paine inkorporiert Gedichte und Wortspiele, welche die Geschichtsstruktur unterstützen und humoristische und dramatische Einblicke in den Kopf des Protagonisten gewähren.<br/>
+				In Life is Paine ist alles miteinander kombinierbar. Die meisten Objekte haben pro Kombination eigene Dialoge und Witze, welche das Spiel auflockern und nervige Wiederholungen von Sätzen beim Herumprobieren verhindern.<br/>
+				<br/>
+				<p class="h">Wer designt das Spiel?</p>
+				Das Spiel wird von Jonas Autenrieth entwickelt und konzipiert.
+
+			</div>
+			<!--Download-->
+			<div class="incontainer" id="download">
+				<table>
+					<tr>
+						<td>
+							Wenn du das erste Kapitel Spiels herunterladen willst kannst du es entweder hier direkt
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="Life is Paine.rar" download>
+								<img class="downloadpic" src="pictures/download.png" alt="">
+							</a>
+						</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td>
+							Oder über itch.io herunterladen
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="https://autenrieth-j.itch.io/life-is-paine-kapitel-1" target="_blank" rel="noreferrer">
+								<img class="downloadpic" src="pictures/itchio.png" alt="">
+							</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!-- Bug Report-->
+			<div class="incontainer" id="bugreport">
+			Hast du einen Bug gefunden und möchtest helfen ihn zu beheben, oder hast andere Fragen dann
+			<a href="mailto:lifeispainegame@gmail.com?subject=Bug%20Report">sende eine Mail</a>
+			<br>Oder kontaktiere mich über <a href="https://www.facebook.com/Life-is-Paine-109971624114709/?ref=page_internal" target="_blank" rel="noreferrer">Facebook</a>
+			</div>
+			
+			<!-- Support me-->
+			<div class="incontainer" id="support">
+			Gefällt dir das Spiel und du möchtest mich unterstützen?<br>
+			Dann schau auf meiner <a href="https://www.patreon.com/jonaut" target="_blank" rel="noreferrer">Patreon</a> Seite vorbei<br>
+			<br>
+			Oder hilf das Spiel über <a href="https://www.kickstarter.com/projects/jonaut/life-is-paine-point-and-click-adventure?ref=project_build" target="_blank"rel="noreferrer">Kickstarter</a> zu finanzieren.
+			<br>
+			</div>
+		</div>
+
+		<p class="language"><a id="de"  href="https://lifeispaine.de" rel="noreferrer">DE</a> | <a id="en" href="https://en.lifeispaine.de" rel="noreferrer">EN</a></p>
+
+	</div>
+</body>
+<script>
+	movement();
+	
+	window.onorientationchange = function(event) { 
+        window.location.reload(); 
+    };
+	window.onresize = function(event) { 
+        window.location.reload(); 
+    }; 
+	
+	if(window.location.href == "https://lifeispaine.de/" || window.location.href == "https://www.lifeispaine.de/"){
+		document.getElementById("de").style.opacity = 0.5;
+	}else{
+		document.getElementById("en").style.opacity = 0.5;
+	}
+</script>
+
+</html>
